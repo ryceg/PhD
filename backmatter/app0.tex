@@ -1,0 +1,9 @@
+% app0.tex (file to switch to appendix mode)
+% No need to alter this file...
+\newpage
+\newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
+\newcommand\invisiblechapter[1]{%
+  \refstepcounter{chapter}%
+  \addcontentsline{toc}{chapter}{\protect\numberline{\thechapter}#1}%
+  \chaptermark{#1}}
+\appendix\appendixpage\addappheadtotoc\space

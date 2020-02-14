@@ -1,0 +1,149 @@
+% Turabian Formatting for Theses and Dissertations, 2018/08/06
+%
+% Developed using the turabian-formatting package (2018/08/01), available through CTAN: http://www.ctan.org/pkg/turabian-formatting
+%
+% Additional document class formatting options:
+%
+% raggedright: ragged right formatting without hyphenations
+% authordate: support for the author-date citation style
+% endnotes: support for endnotes
+
+% document class handles the big-picture formatting
+\documentclass{turabian-thesis}
+
+% For Turabian citations, use the biblatex-chicago package
+\usepackage[noibid]{biblatex-chicago}
+\addbibresource{backmatter/works-cited.bib}
+
+
+% inputenc handles unicode (i.e. non-ASCII characters, such as letters with umlauts). This may need changing, depending on what you're using to compile (LuaTex, pdftex, etc.)
+\usepackage[utf8]{inputenc}
+
+% graphicx handles graphics. Requisite for hyperref, don't worry about this.
+\usepackage{graphicx}
+
+
+% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks = false,
+    linkbordercolor = {white},
+    urlcolor = {blue}
+}
+
+% For lorem ipsum text. use \lipsum[5] to create placeholder text. Increase the number in the brackets for more text.
+% Very handy to get an overview of how it's going to look, but also can make you feel unreasonably confident- beware!
+\usepackage{lipsum}
+
+% it's unwise to mess with anything in this section- all of these are great packages, and if you don't use them, then LaTex doesn't include them, so there's no reason to turn them off.
+% I have included some search tags in the hope that they're useful. Refer to the package's documentation for further information about how to implement them.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% fancyhdr does fancy headers.
+\usepackage{fancyhdr}
+
+% microtype handles microscopic improvements.
+\usepackage{microtype}
+
+% cmap makes pdfs searchable.
+\usepackage{cmap}
+% % % % search pdf, text, highlight text
+
+% csquotes handles quotations
+\usepackage{csquotes}
+% % % % quotes, quoting, quotation
+
+% ellipsis handles ellipses.
+\usepackage{ellipsis}
+% % % % ellpisis, ellipses, ..., . . . 
+
+% allows half and half in tables. 
+\usepackage{diagbox}
+% % % % diagonal tables, split table
+
+% allows multiple rows in tables.
+\usepackage{multirow}
+
+% For fancier tables.
+\usepackage{booktabs}
+
+% xcolor handles adding coloured text.
+\usepackage{xcolor}
+% % % % coloured text, color, red text
+
+% for captioning
+\usepackage{caption} % hypcap is true by default so [hypcap=true] is optional in \usepackage[hypcap=true]{caption}
+
+% for referencing the titles of sections
+\usepackage{nameref}
+% % % % reference titles
+
+% for appendices
+\usepackage{appendix}
+
+% for including pdf pages
+\usepackage{pdfpages}
+
+% for including quotes
+\usepackage{epigraph}
+
+
+% for in-line code
+\usepackage{listings}
+% % % % code font
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Information for title page
+\title{Harmonic Based Extended Techniques and their Compositional Applications}
+\subtitle{An Investigation in New String Techniques}
+\author{Rhys Gray}
+% \course{Bachelor of Music (Honours)}
+% \institution{University of Tasmania}
+% \department{Conservatorium of Music}
+% \location{Hobart, Tasmania}
+\date{\today}
+
+% define new commands i.e. variables i.e. pieces of music
+\newcommand{\violinPiece}{\emph{what are you doing with the humans}}
+\newcommand{\violaPiece}{\emph{doppelganger}}
+\newcommand{\bassPiece}{\emph{the veldt}}
+\newcommand{\celloPiece}{\emph{liminal}}
+% aliases for performers to maintain anonymity
+\newcommand{\violaParticipant}{Angus}
+\newcommand{\celloParticipant}{Sarah}
+\newcommand{\bassParticipant}{Joe}
+
+% this is where the document starts. Comment out things that you don't need.
+\begin{document}
+\frontmatter{}
+\maketitle
+\include{frontmatter/declaration}
+\include{frontmatter/abstract}
+\include{frontmatter/dedication}
+\tableofcontents{}
+\listofillustrations{}
+
+\mainmatter{}
+\include{mainmatter/introduction}
+\include{mainmatter/chapter1}
+% \include{mainmatter/chapter2}
+% \include{mainmatter/chapter3}
+% \include{mainmatter/chapter4}
+\include{mainmatter/conclusion}
+
+\backmatter{}
+
+\begin{appendixes}
+    \include{backmatter/app0}
+    \include{backmatter/app5}
+    \include{backmatter/app1}
+    % \include{backmatter/app2}
+    % \include{backmatter/app3}
+    % \include{backmatter/app4}
+    % \include{backmatter/appendixb}
+\end{appendixes}
+
+\printbibliography{}
+
+\end{document}
