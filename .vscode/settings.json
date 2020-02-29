@@ -1,4 +1,37 @@
 {
     "todo-tree.showTagsFromOpenFilesOnly": false,
-    "todo-tree.tree.showTagsFromOpenFilesOnly": false
+    "todo-tree.tree.showTagsFromOpenFilesOnly": false,
+    "cSpell.words": [
+        "CTAN",
+        "Fallowfield's",
+        "Multiphonic",
+        "Pomo",
+        "Rhys",
+        "Sciarrino's",
+        "TODOs",
+        "Turabian",
+        "Zotero",
+        "authordate",
+        "biblatex",
+        "cmap",
+        "csquotes",
+        "docx",
+        "ellpisis",
+        "fancyhdr",
+        "graphicx",
+        "hidelinks",
+        "hypcap",
+        "multiphonics",
+        "normale",
+        "notehead",
+        "oooooooohh",
+        "pdfs",
+        "pdftex",
+        "ponticello",
+        "tasto",
+        "turabian",
+        "untick",
+        "urlcolor",
+        "xcolor"
+    ]
 }

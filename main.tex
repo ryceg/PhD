@@ -24,12 +24,12 @@
 
 
 % hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-    colorlinks = false,
-    linkbordercolor = {white},
-    urlcolor = {blue}
-}
+% \usepackage[hidelinks]{hyperref}
+% \hypersetup{
+%     colorlinks = false,
+%     linkbordercolor = {white},
+%     urlcolor = {blue}
+% }
 
 % For lorem ipsum text. use \lipsum[5] to create placeholder text. Increase the number in the brackets for more text.
 % Very handy to get an overview of how it's going to look, but also can make you feel unreasonably confident- beware!
@@ -72,7 +72,7 @@
 % % % % coloured text, color, red text
 
 % for captioning
-\usepackage{caption} % hypcap is true by default so [hypcap=true] is optional in \usepackage[hypcap=true]{caption}
+% \usepackage{caption} % hypcap is true by default so [hypcap=true] is optional in \usepackage[hypcap=true]{caption}
 
 % for referencing the titles of sections
 \usepackage{nameref}
@@ -99,9 +99,9 @@
 \subtitle{An Investigation in New String Techniques}
 \author{Rhys Gray}
 % \course{Bachelor of Music (Honours)}
-% \institution{University of Tasmania}
-% \department{Conservatorium of Music}
-% \location{Hobart, Tasmania}
+\institution{University of Tasmania}
+\department{Conservatorium of Music}
+\location{Hobart, Tasmania}
 \date{\today}
 
 % define new commands i.e. variables i.e. pieces of music
@@ -127,7 +127,7 @@
 \mainmatter{}
 \include{mainmatter/introduction}
 \include{mainmatter/chapter1}
-% \include{mainmatter/chapter2}
+\include{mainmatter/chapter2}
 % \include{mainmatter/chapter3}
 % \include{mainmatter/chapter4}
 \include{mainmatter/conclusion}
