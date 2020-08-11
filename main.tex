@@ -100,8 +100,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Information for title page
-\title{\LaTeX\ Templates for the Uni Student}
-\subtitle{A Template for UTas Conservatorium Honours Students}
+\title{`Writing Wrong Right'}
+\subtitle{An Investigation in Composing with Extended Techniques}
 \author{Rhys Gray}
 % \course{Bachelor of Music (Honours)}
 \institution{University of Tasmania}
@@ -123,26 +123,31 @@
 \begin{document}
 \frontmatter{}
 \maketitle
-\include{frontmatter/declaration}
-\include{frontmatter/abstract}
-\include{frontmatter/dedication}
 \tableofcontents{}
 \listofillustrations{}
 
 \mainmatter{}
-\include{mainmatter/introduction}
-\include{mainmatter/chapter1}
-\include{mainmatter/chapter2}
+\input{./components/background.tex}
+\input{./components/keyQuestions.tex}
+\input{./components/aims.tex}
+\input{./components/literatureReview.tex}
+\input{./components/methodology.tex}
+\input{./components/timeline.tex}
+\input{./components/outcomes.tex}
+\input{./components/outputs.tex}
+% \include{mainmatter/introduction}
+% \include{mainmatter/chapter1}
+% \include{mainmatter/chapter2}
 % \include{mainmatter/chapter3}
 % \include{mainmatter/chapter4}
-\include{mainmatter/conclusion}
+% \include{mainmatter/conclusion}
 
 \backmatter{}
 
 \begin{appendixes}
-    \include{backmatter/app0}
-    \include{backmatter/app5}
-    \include{backmatter/app1}
+    % \include{backmatter/app0}
+    % \include{backmatter/app5}
+    % \include{backmatter/app1}
     % \include{backmatter/app2}
     % \include{backmatter/app3}
     % \include{backmatter/app4}
