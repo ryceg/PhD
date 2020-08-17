@@ -9,7 +9,7 @@
 % endnotes: support for endnotes
 
 % document class handles the big-picture formatting
-\documentclass{turabian-thesis}
+\documentclass[draft]{turabian-thesis}
 
 % For Turabian citations, use the biblatex-chicago package
 \usepackage[noibid]{biblatex-chicago}
@@ -88,13 +88,22 @@
 \usepackage{listings}
 % % % % code font
 
-% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
-\usepackage[hidelinks]{hyperref}
-\hypersetup{
-    colorlinks = false,
-    linkbordercolor = {white},
-    urlcolor = {blue}
+% for todos
+\usepackage{fixme}
+\fxsetup{
+    status=draft,
+    author=Rhys,
+    layout=pdfnote, % also try footnote, inline, or pdfnote
+    theme=signature
 }
+
+% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
+% \usepackage[hidelinks]{hyperref}
+% \hypersetup{
+%     colorlinks = false,
+%     linkbordercolor = {white},
+%     urlcolor = {blue}
+% }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
