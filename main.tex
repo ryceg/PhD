@@ -24,15 +24,6 @@
 % graphicx handles graphics. Requisite for hyperref, don't worry about this.
 \usepackage{graphicx}
 
-
-% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
-% \usepackage[hidelinks]{hyperref}
-% \hypersetup{
-%     colorlinks = false,
-%     linkbordercolor = {white},
-%     urlcolor = {blue}
-% }
-
 % For lorem ipsum text. use \lipsum[5] to create placeholder text. Increase the number in the brackets for more text.
 % Very handy to get an overview of how it's going to look, but also can make you feel unreasonably confident- beware!
 \usepackage{lipsum}
@@ -97,6 +88,14 @@
 \usepackage{listings}
 % % % % code font
 
+% hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks = false,
+    linkbordercolor = {white},
+    urlcolor = {blue}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Information for title page
@@ -119,12 +118,17 @@
 \newcommand{\celloParticipant}{Sarah}
 \newcommand{\bassParticipant}{Joe}
 
+% for how deep the ToC should go
+% -1 part     1 section     3 subsubsection  5 subparagraph
+%  0 chapter  2 subsection  4 paragraph
+\setcounter{tocdepth}{2}
+
 % this is where the document starts. Comment out things that you don't need.
 \begin{document}
 \frontmatter{}
 \maketitle
 \tableofcontents{}
-\listofillustrations{}
+% \listofillustrations{}
 
 \mainmatter{}
 \input{./components/background.tex}
