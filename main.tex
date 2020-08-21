@@ -15,8 +15,6 @@
 \usepackage[noibid]{biblatex-chicago}
 \addbibresource{backmatter/works-cited.bib}
 
-\addbibresource{backmatter/citations.bib}
-
 
 % inputenc handles unicode (i.e. non-ASCII characters, such as letters with umlauts). This may need changing, depending on what you're using to compile (LuaTex, pdftex, etc.)
 \usepackage[utf8]{inputenc}
@@ -87,7 +85,7 @@
 % for in-line code
 \usepackage{listings}
 % % % % code font
-
+\usepackage{hyperref}
 % for todos
 \usepackage{fixme}
 \fxsetup{
@@ -100,7 +98,7 @@
 
 
 % hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
-% \usepackage[hidelinks]{hyperref}
+
 % \hypersetup{
 %     colorlinks = false,
 %     linkbordercolor = {white},
