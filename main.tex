@@ -9,7 +9,7 @@
 % endnotes: support for endnotes
 
 % document class handles the big-picture formatting
-\documentclass[draft]{turabian-thesis}
+\documentclass[]{turabian-thesis}
 
 % For Turabian citations, use the biblatex-chicago package
 \usepackage[noibid]{biblatex-chicago}
@@ -95,6 +95,10 @@
     theme=signature
 }
 \definecolor{fxnote}{rgb}{0.94, 0.97, 1.0}
+
+
+% for glossaries
+\usepackage{glossaries}
 
 
 % hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
