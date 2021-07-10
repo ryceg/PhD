@@ -203,15 +203,15 @@
 % \listofillustrations{}
 
 \mainmatter{}
-\input{./components/background.tex}
+\input{./mainmatter/introduction.tex}
+% \input{./components/background.tex}
 \input{./components/keyQuestions.tex}
 \input{./components/aims.tex}
-% \input{./components/literatureReview.tex}
+\input{./components/literatureReview.tex}
 \input{./components/methodology.tex}
 % \input{./components/timeline.tex}
 \input{./components/outcomes.tex}
 \input{./components/outputs.tex}
-\include{mainmatter/introduction}
 \include{mainmatter/chapter1}
 \include{mainmatter/chapter2}
 \include{mainmatter/chapter3}
@@ -231,9 +231,8 @@
     % \include{backmatter/appendixb}
 \end{appendixes}
 
-\printbibliography
+\printbibliography{}
 % \clearpage
-
 % \printglossary{}
 
 \end{document}
