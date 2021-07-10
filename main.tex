@@ -101,6 +101,62 @@
 \usepackage{glossaries}
 
 
+% \makeglossaries{}
+
+\newglossaryentry{score}
+{
+    name=score,
+    description={The document that a composer creates}
+}
+
+\newglossaryentry{text}
+{
+    name=text,
+    description={}
+}
+
+\newglossaryentry{content}
+{
+    name=content,
+    description={The contents of the score}
+}
+
+\newglossaryentry{technique}
+{
+    name=technique,
+    description={An action that a performer performs.}
+}
+
+\newglossaryentry{icon} 
+{
+    name=icon,
+    description={which have a direct physical connection to the signified. Photographs are an example of icons.}
+}
+
+\newglossaryentry{index} 
+{
+    name=index,
+    description={which show evidence of the signified. The most common example being smoke indexing fire.}
+}
+
+\newglossaryentry{symbol} 
+{
+    name=symbol,
+    description={which have no resemblance between the signifier and the signified; their meaning must be culturally learned. Arabic numerals, the radioactive symbol, and flags are all symbols.}
+}
+
+\newglossaryentry{denotation} 
+{
+    name=denotation,
+    description={the basic or literal meaning of the sign (i.e.\ a rose signifies the flower of the genus \emph{Rosa} of the family \emph{Rosaceae})}
+}
+
+\newglossaryentry{connotation} 
+{
+    name=connotation,
+    description={the secondary, culturally inferred meaning; a rose might also signify passion or love, depending on the context.}
+}
+
 % hyperlinks! The option [hidelinks] makes it still black i.e. not obviously a hyperlink. Remove [hidelinks] to make it the classic hyperlink style.
 
 % \hypersetup{
@@ -175,6 +231,9 @@
     % \include{backmatter/appendixb}
 \end{appendixes}
 
-\printbibliography{}
+\printbibliography
+% \clearpage
+
+% \printglossary{}
 
 \end{document}
