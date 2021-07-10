@@ -1,0 +1,40 @@
+\section{Interfaces}
+We find that a schema or interface is necessary in order to parse the various notational aspects of sheet music, so that there is no data loss upon mutation of the interface.
+What this means is that we need to understand what every part of a piece of sheet music (and the notation on it) communicates to the interpreter in order to be able know what can be changed.
+Without an understanding of the interface, a composer may remove an element that may seem unimportant (beams on notes, for example), and then find that the interface no longer communicates an element that is important to their composition (without beams, rhythmic information is lost).
+Thus, in order to make new methods of interacting with the score interface possible, we must first understand what the score interface is, and how we parse it.
+Composers seeking to make use of emerging technologies, such as Alternate Reality, Virtual Reality, 3D effects, animated scores, interactive scores, or other as of yet unimagined ways of presenting instructions will derive the most benefit from this.
+However, composers that stay closer to the classical art music tradition will still find use for the delineation of the function of each element of a score.
+
+Defining terms for the interface is difficult, and there is cultural and semantic baggage no doubt associated with each and every term.
+Creating a new word that is free of any context would be a double edged sword, where the reader lacks the real-world applicability of a stand-in term to define the meta-object.
+Phrases such as `score' have connotations which would assist in the parsing of contextual meaning. 
+However, assigning the same word to the interface as the physical object that it references is sure to be confusing.
+Therefore, we need to use a term that is not already in use in a musical context, but has the assistive connotations that a similar term may have. 
+It is for this reason that `interface' is a prime candidate for the way in which we communicate our musical ideas to the interpreter. 
+The specific `musical score' can have its definition taken from the artistic world; `canvas' is a suitable choice, as it evokes a sense of a physical, tangible item to be painted upon.
+The content of the canvas can be 
+
+Mock example: 
+
+% ScoreInterface {
+%     methods: {
+%         visual: {
+%             mode: VisualMode
+%             
+%             isAnimated: boolean
+%             isInteractive: boolean
+%             isDynamic: boolean
+%             is
+%         }
+%     }
+%     interpreter: Performer
+% }
+
+% Audience {
+
+% }
+
+% Performer {
+
+% }
