@@ -101,7 +101,7 @@
 \usepackage{glossaries}
 
 
-% \makeglossaries{}
+\makeglossaries{}
 
 \newglossaryentry{score}
 {
@@ -203,6 +203,7 @@
 % \listofillustrations{}
 
 \mainmatter{}
+\input{./components/progressReport.tex}
 \input{./mainmatter/introduction.tex}
 % \input{./components/background.tex}
 \input{./components/keyQuestions.tex}
@@ -222,9 +223,9 @@
 \backmatter{}
 
 \begin{appendixes}
-    % \include{backmatter/app0}
+    \include{backmatter/app0}
     % \include{backmatter/app5}
-    % \include{backmatter/app1}
+    \include{backmatter/app1}
     % \include{backmatter/app2}
     % \include{backmatter/app3}
     % \include{backmatter/app4}
@@ -233,6 +234,6 @@
 
 \printbibliography{}
 % \clearpage
-% \printglossary{}
+\printglossary{}
 
 \end{document}
