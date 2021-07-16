@@ -5,7 +5,7 @@
 \section{Goals}
 
 In this section, I examine the interfaces used to communicate music, and synthesise a working model of ways to notate techniques that can interface with traditional Western musical notation, and extend it.
-The argument being put forth\fxnote{put forth by whom?} is that much like a language, music notation evolves naturally, with new `words' being developed when no suitable existing `word' is found.
+Much like a language, music notation evolves naturally, with new `words' being developed when no suitable existing `word' is found.\fxnote{Citation needed}
 The system which I propose is not a constructed language like Lojban or Esperanto, which take an opinionated and prescriptive approach to language. 
 Rather, the method is more like compiling a list of morphemes\fxnote{What is a morpheme?} encountered in existing works, breaking down our existing musical language into its elements so that compoundment, affixation, and other methods of constructing new `words' may occur naturally.
 With this system, we will be able to establish a dictionary of existing symbols, as well as their function.
@@ -17,18 +17,18 @@ In instances of entirely novel concepts, this morphemic catalogue can be applied
 \subsection{Overview of Semiotics}
 
 A brief overview of semiotics is necessary in order to contextualise the intent and methodology that is used.
-Semiotics, the study of signs (read: meaningful communication), was invented concurrently by Ferdinand de Saussure and Charles Sanders Peirce independent of one another.\fxnote[]{saussure}
+Semiotics, the study of signs (read: meaningful communication), was conceived concurrently by Ferdinand de Saussure and Charles Sanders Peirce independent of one another.\fxnote[]{saussure}
 The most appreciable difference between their models was that while Saussure held that signs were made up of a signifier (the form of the sign) and signified (its meaning), Pierce's model also had an interpretant; the object that the audience interprets the signified as (since it is impossible to replicate meaning perfectly).\fxnote[]{pierce}
 Signifiers are then broken up into three discrete categories; 
 \begin{itemize}
-\item \emph{\gls{icon}}: which have a direct physical connection to the signified. Photographs are an example of icons.
-\item \emph{\gls{index}}: which show evidence of the signified. The most common example being smoke indexing fire.
-\item \emph{\gls{symbol}}: which have no resemblance between the signifier and the signified; their meaning must be culturally learned. Arabic numerals, the radioactive symbol, and flags are all symbols.
+\item \emph{\gls{icon}}: which has a direct physical connection to the signified. Photographs are an example of icons.
+\item \emph{\gls{index}}: which shows evidence of the signified. The most common example being smoke indexing fire; and
+\item \emph{\gls{symbol}}: which has no resemblance between the signifier and the signified; their meaning must be culturally learned. Arabic numerals, the radioactive symbol, and flags are all symbols.
 \end{itemize}
 
 Finally, our signs have two channels of information.
 \begin{itemize}
-\item \emph{\gls{denotation}}: the basic or literal meaning of the sign (i.e.\ a picture of a rose signifies the flower of the genus \emph{Rosa} of the family \emph{Rosaceae})
+\item \emph{\gls{denotation}}: the basic or literal meaning of the sign; for example, a picture of a rose signifies the flower of the genus \emph{Rosa} of the family \emph{Rosaceae}; and
 \item \emph{\gls{connotation}}: the secondary, culturally inferred meaning; a rose might also signify passion or love, depending on the context.
 \end{itemize}
 
@@ -36,12 +36,13 @@ Interpreting these signs is described as semiosis, which Philip Tagg states is `
 Semiosis happens constantly; the process of converting these words into the understanding of the concept of semiosis is, in itself, semiosis. 
 Pierce argues that in between the audience and the signifier, during the process of semiosis there is the interpretant, an object that the audience creates that represents the signified (because a dog cannot exist inside our heads, but merely the idea of a dog; the reality of the dog will never be fully realised inside the mind because it lacks the gestalt of the physical thing; 
 it's a construct, unable to approach the truth of the dog by virtue of its limitations).\fxnote[]{pierce}
-Semiosis is an important step, as the interpretant which Peirce describes is unique to the audience; we construct meaning completely independently, informed by our past experiences and knowledge.\fxnote{citation needed Pierce}
+Semiosis is an important step, as the interpretant which Pierce describes is unique to the audience; we construct meaning completely independently, informed by our past experiences and knowledge.\fxnote{citation needed Pierce}
 Thus, the same picture of an aunt's dog may be interpreted by the aunt as being a loving pet, whereas a neighbour might interpret the image more negatively, as `the annoying dog that wakes me up at 6am'.
 
 Looking at Western notation, we have several instances where a symbol may hold a different context depending on the interpreter's experience-- 
-the same notation is used for a harmonic and a note that is meant to be played open on a French horn.\autocite[]{schuilingNotationCulturesEthnomusicology2019}
-If a musician was given a piece of sheet music without any indicator of the instrument that it was written for, their experience (or lack thereof) with one of the instruments may influence how they choose to interpret the symbol.
+for example, the same notation is used for a harmonic and a note that is meant to be played open on a French horn.\autocite[]{schuilingNotationCulturesEthnomusicology2019}
+% If a musician was given a piece of sheet music without any indicator of the instrument that it was written for, their experience (or lack thereof) with one of the instruments may influence how they choose to interpret the symbol.
+Musicians approaching a piece of sheet music without the context of the instrumentation would fall back to their experience to interpret the symbols.
 John Fiske categorises \begin{quotation}
     denotation [as] what is photographed, connotation [as] how it is photographed
 \end{quotation}.\autocite[91]{fiskeIntroductionCommunicationStudies2011}
@@ -57,12 +58,14 @@ As an example, the line that makes up a glissandi can be either straight, or wav
 \caption{Various styles of glissandi}\label{fig:Glissando}
 \end{figure}
 The similarity of the last two examples on the right to the notation for \emph{portamento} results in a connotation with those two types being continuous, rather than having discrete pitches.
-Additionally, the interpretant's instrument may also influence the meaning to them- timpanists and trombonists are more likely to interpret glissandi as continuous changes, while pianists interpret step-wise due to the nature of their instruments.\fxnote{need to find a citation for this}
-In this way, we understand that the meaning of a symbol is tied inextricably with the culture of the interpretant; attempting to make use of this cookbook for an audience not `primed' to understand it (i.e.\ one unfamiliar with Western art music conventions) is doomed to failure.
+Additionally, the interpretant's instrument may also influence the meaning to them; timpanists and trombonists are more likely to interpret glissandi as continuous changes, while pianists interpret step-wise due to the nature of their instruments.\fxnote{need to find a citation for this}
+In this way, we understand that the meaning of a symbol is tied inextricably with the culture of the interpretant; attempting to make use of this `cookbook' for an audience not `primed' to understand it (i.e.\ one unfamiliar with Western art music conventions) is doomed to failure.
 In order to produce a document that can be used reliably, the work must either be totally objective (a fool's errand in the pursuit of extracting cultural understanding of signs), or cognisant of the pitfalls and assumptions made.
-To this end, the `cookbook' necessitates disclaimers specifying the assumptions made; terminology or notation used specifically in avant-garde or Renaissance music will not have any transitive qualities aiding its uptake to an audience that is not familiar with the source material.
+To this end, the `cookbook' necessitates disclaimers specifying the assumptions made.
+Terminology or notation used specifically in avant-garde or Renaissance music will not have any transitive qualities aiding its uptake to an audience that is not familiar with the source material.
 
-Some symbols are not compatible with one another; a properly engraved work will never have an upbow and downbow on the same note, as the two symbols fulfill the same function (unless, of course, the two symbols are joined together, which denotes a rapid rebowing).
+Some symbols are not compatible with one another. 
+A properly engraved work will never have an upbow and downbow on the same note, as the two symbols fulfill the same function (unless, of course, the two symbols are joined together, which denotes a rapid rebowing).
 This is what is known as a paradigmatic relationship; by virtue of the presence of one, it excludes the possibility of the other.
 Looking at web design, we can draw a somewhat rough parallel to drop-down menus; there's only one slot that can be filled.
 Other examples of paradigms would be the degree at which a French horn opens or mutes their instrument, which is not a binary, but a scale of `openness'.
@@ -97,7 +100,7 @@ In other cases, such as the notation for \fxnote{TODO find a better example than
 Crumb's notation method has the least specificity, denoting simply a `scratchy tone' \fxnote{TODO find Crumb's quote}, while Kaija Saariaho specifies the relative degree of pressure to apply.
 Mari Kimura's method specifies the resultant pitch, but omits the relative pressure required to obtain the tone.
 These methods of notation are all for the same technique, but focus on different aspects, according to what is desired by the composer.
-It is this philosophy that this thesis intends to address; 
+It is this philosophy that this exegesis intends to address; 
 providing a toolbox of components that a composer can use to construct new notation, as well as cataloguing existing notations so that composers may better communicate their intent, to make the interface that they create closer resemble the interpretant that exists in their head.
 
 Of particular interest is the work of Ellen Fallowfield, whose thesis, `CelloMap' website and recently, application, form a comprehensive and holistic review of the ways in which a performer may `map' actions onto a cello.\autocite[]{fallowfieldCelloMapHandbook2009,fallowfieldCelloMap}
